@@ -17,11 +17,10 @@ class Github extends Component {
         this.props.history.push(`/github/${this.state.username}`)
     }
 
-    
+
     render() {
         return (
             <div className="github">
-                <h1>GitHub Component</h1>
                 <img className="github-logo" src="http://www.aha.io/assets/github.7433692cabbfa132f34adb034e7909fa.png" alt="github logo"/>
                 <form onSubmit={this.handleSubmit}>
                 <div>
@@ -35,7 +34,7 @@ class Github extends Component {
                     <button type="submit">Look up Github user</button>
                 </div>
                 </form>
-                <Route exact path='/github' render={() => <h3>Please enter a username to search on Github</h3>} />
+                <Route exact path='/github/:username' render={(props) => <h3>You searched for {props.match.params.username}</h3>} />
             </div>
     )
   }
