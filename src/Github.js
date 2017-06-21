@@ -35,10 +35,11 @@ class Github extends Component {
                     <button type="submit">Look up Github user</button>
                 </div>
                 </form>
-                <Route exact path='/github/:username' component={GithubUser} />
+                <Route exact path='/github' render={() => <h3>Please enter a username to search on Github</h3>} />
+                <Route path='/github/:username' component={GithubUser} />
             </div>
-    )
-  }
+        )
+    }
 }
 
 export default Github
