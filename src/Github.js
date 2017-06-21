@@ -16,6 +16,7 @@ class Github extends Component {
         ev.preventDefault()
         this.props.history.push(`/github/${this.state.username}`)
     }
+
     
     render() {
         return (
