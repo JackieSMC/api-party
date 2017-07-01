@@ -1,0 +1,45 @@
+#pokedex {
+  position: absolute;
+  margin-bottom: 1rem;
+  transform: translateX(-50%) !important;
+  left: 50%;
+  z-index: 0;
+}
+
+#pokemon-sprite {
+  transform: scale(2);
+  z-index: 1;
+  position: absolute;
+  margin-top: 16rem;
+  padding-right: 16rem;
+}
+
+#ht-wt {
+  font-size: 32px;
+  padding-left: 17rem;
+  padding-top: 3.5rem;
+}
+
+#name {
+  font-size: 30px;
+  padding-left: 16rem;
+  padding-top: 7.7rem;
+}
+
+#general-info {
+  position: relative;
+  font-size: 32px;
+  padding-top: 3rem;
+}
+
+#type {
+  margin-bottom: 1rem;
+}
+
+.bottom-margin {
+  margin-bottom: 2rem;
+}
+
+.absolute {
+  position: absolute;
+}
